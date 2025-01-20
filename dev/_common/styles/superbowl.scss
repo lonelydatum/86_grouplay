@@ -5,6 +5,7 @@
 
 .t2a{
 	z-index: 1;
+	@include pos-scale(0, -2, .5);
 }
 .t2b{
 	z-index: 0;
@@ -12,6 +13,7 @@
 
 .t2c{
 	// z-index: 8;
+	@include pos-scale(0, 2, .5);
 }
 
 .frame2{
