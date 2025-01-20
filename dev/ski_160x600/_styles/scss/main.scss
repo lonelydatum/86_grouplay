@@ -1,0 +1,10 @@
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/size_160x600.scss';
+
+
+
+
+
+.frame1 .logo_group{
+	@include pos-scale(7, 90, .73);
+}
