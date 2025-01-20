@@ -51,20 +51,39 @@ table {
   border-spacing: 0;
 }
 
-.t1 {
-  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
+.logo_group {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
 }
 
-#bars, #bars2 {
-  position: relative;
+.t2a {
+  z-index: 1;
+}
+
+.t2b {
   z-index: 0;
 }
 
-#bars .bar, #bars2 .bar {
-  padding: 0;
-  margin: 0;
-  position: absolute;
+.transform-origin {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.end_cta {
+  -webkit-filter: drop-shadow(0px 0px 10px #20bee6);
+  filter: drop-shadow(0px 0px 10px #20bee6);
+}
+
+.end_screen_1_max {
+  -webkit-filter: drop-shadow(0px 0px 10px #d9efa5);
+  filter: drop-shadow(0px 0px 10px #d9efa5);
+}
+
+.end_screen_2_649 {
+  -webkit-filter: drop-shadow(0px 0px 10px #9de6f0);
+  filter: drop-shadow(0px 0px 10px #9de6f0);
 }
 
 #legalBtn:hover ~ #legalContent {
@@ -230,10 +249,6 @@ canvas, .text, .frame, .outline, img {
 
 #GL_logo {
   position: absolute;
-}
-
-.t1, .t2a, .t2b {
-  z-index: 10;
 }
 
 #GL_blueWedge {

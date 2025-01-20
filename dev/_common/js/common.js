@@ -9,10 +9,11 @@ gsap.defaults({
 const {w, h} = size
 
 const READ = {
-	t1: 2.5,
-	t2: 1.7,
-	t3: 2.1,
+	t1: 2,
+	t2: 2.5,	
 }
+
+let SCREEN_WIDTH = 74
 
 function init(){	
 	const tl = new TimelineMax({onComplete:()=>{
@@ -27,139 +28,67 @@ function init(){
 
 
 function stag(vh){
-	return { duration:.3, opacity:0, stagger: .1, ...vh }
+	return { duration:.3, opacity:0, stagger: .2, ...vh }
 }
 
 
 function start_landscape(barOptions, barOptions2, vh={x:-size.w}){
-	const tl = init()	
-	tl.add("start")
-	const barTL = barOptions.verHor==="h" ? animate_bars_vertical(barOptions, false) : animate_bars_horizontal(barOptions)
 	
-	
-	tl.add(barTL, "start")	
-	// return
-	tl.from('.t1', stag(vh), "start+=.3");	
-	tl.from('.logos', {opacity:0, duration:.3});	
-	tl.to([".hero", ".t1", "#bars", ".logos"], {duration:.3, opacity:0}, `+=${READ.t1}`)
-	
-	const barTL2 =barOptions2.verHor==="h" ? animate_bars_vertical(barOptions2) : animate_bars_horizontal(barOptions2)
-	tl.add(barTL2, "end")	
-	tl.from('.t2', stag(vh), "end+=.3");		
-	if(universalBanner.size==="728x90" || universalBanner.size==="320x50"){
-		tl.to(".t2", {duration:.3, opacity:0}, `+=${READ.t2}`)	
-	}else{
-		tl.to(".t2", {duration:.3, y:0, scale:.5, x:0, top:0, left:0}, `+=${READ.t2}`)		
-	}
-	
-	tl.from([".cta", ".legalBtn",  ".logos_big", ".playsmart"], {duration:.3, opacity:0})
-	tl.add(olg())
+
 }
 
 function start(barOptions, barOptions2, vh={x:-size.w}){
 	
 	const tl = init()	
-	tl.from('.playa', {x:"+=150", y:"+=100", scale:"-=.3",  duration:.4,ease:"power3.out"});	
+	
 	tl.add("start")
-	// const barTL = barOptions.verHor==="h" ? animate_bars_vertical(barOptions, false) : animate_bars_horizontal(barOptions)
-
-	// tl.add(barTL, "start")	
+	
 
 	tl.from('.t1', stag(vh), "start");	
-	tl.to([".hero",".playa", ".bars", ".t1", "#bars", ".logos"], {duration:.3, opacity:0}, `+=${READ.t1}`)
 	
-	const barTL2 =barOptions2.verHor==="h" ? animate_bars_vertical(barOptions2) : animate_bars_horizontal(barOptions2)
-	tl.add(barTL2, "end")	
-	tl.from('.t2', stag(vh), "end+=.3");		
+	
+	tl.to(".t1", {opacity:0, duration:.3}, `+=${READ.t1}`)
+	tl.from('.t2', stag(vh));		
+	tl.from('.frame1 .logo_group', {scale:0, duration:.5, ease:"back.out"}, "+=.5");		
 
-	if(universalBanner.size==="970x250"){
-		tl.to(".t2", {duration:.3, y:0, scale:.5, x:0, top:0, left:0}, `+=${READ.t2}`)	
-		tl.from([".cta", ".legalBtn", ".playsmart", ".logos_big"], {duration:.3, opacity:0}, "+=.3")
-	}else{
-		tl.from('.logos_big', {opacity:0}, "-=.1");		
-		tl.from([".cta", ".legalBtn", ".playsmart"], {duration:.3, opacity:0}, "+=.4")
-	}
+	tl.add("f2", `+=${READ.t2}`)
+	tl.set(".frame1", {opacity:0}, "f2")
+
+
+	tl.set(".frame2", {opacity:1}, "f2")
+	tl.from('.end_text', {opacity:0, duration:.3});		
+	tl.add(phone())
+	tl.from('.end_cta', {opacity:0}, "+=.5");		
 	
 	
 	tl.add(olg())
+	// tl.play("f2")
 }
 
-
-function animate_bars_horizontal(barOptions){
-	const {
-		TOTAL,
-		WIDTH,
-		HEIGHT,
-		GAP,
-		id,
-		colors,
-		startColor
-	} = barOptions  
-	const bars = document.getElementById(id)	
-	for(let i=0;i<TOTAL;i++){
-		const barItem = document.createElement("div")
-		const height = HEIGHT-(i * GAP)		
-		
-		TweenLite.set(barItem, {
-			transformOrigin:"0% 100%",
-			className: `bar bar_${i}`,
-			width:WIDTH, 
-			height,  
-			
-			scale: 1, 
-			x: WIDTH*i,
-			y: HEIGHT-height,
-			backgroundColor:`#${colors[i]}`
-		})
-		
-		bars.appendChild(barItem)
-	}
-
+function phone(){
 	const tl = new TimelineMax()
-	tl.from(`#${id} .bar`, {
-		scaleY: 0,
-		stagger: 0.06
-	});
-	return tl
-}
 
-function animate_bars_vertical(barOptions, animate=true){
-	const {
-		TOTAL,
-		WIDTH,
-		HEIGHT,
-		GAP,
-		id,
-		colors,
-	} = barOptions  
-	const bars = document.getElementById(id)	
-	for(let i=0;i<TOTAL;i++){
+	tl.from('.phone', {y:`+=${size.h}`});
 
-		const barItem = document.createElement("div")
-		TweenLite.set(barItem, {
-			className: `bar bar_${i}`,
-			height:HEIGHT, 
-			width:WIDTH-(i * GAP),  
-			y:HEIGHT*i, 
-			backgroundColor:`#${colors[i]}`
-		})
-		
-		bars.appendChild(barItem)
-	}
-
-	const tl = new TimelineMax()
-	if(animate){
-		tl.from(`#${id} .bar`, {
-			width: 0,
-			stagger: 0.06
-		});	
-	}
 	
+	tl.from(".end_screen_1_max", {duration:.3, scale:0})
+
+
+	tl.add("screen2", "+=.5")
+	tl.to(".end_screen_1_max", {duration:.3, opacity:0}, "screen2")
+	tl.to(".screen .items", {duration:.3, x:-SCREEN_WIDTH}, "screen2")
+	tl.from(".end_screen_2_649", {duration:.3, scale:0})
+
+	tl.add("screen3", "+=.5")
+	tl.to(".end_screen_2_649", {duration:.3, opacity:0}, "screen3")
+	tl.to(".screen .items", {duration:.3, x:-SCREEN_WIDTH*2}, "screen3")
+	tl.from(".end_screen_3_group", {duration:.3, scale:0})
+
 	return tl
-
-
-
 }
+
+
+
 
 export {size, init, start, start_landscape}
 
