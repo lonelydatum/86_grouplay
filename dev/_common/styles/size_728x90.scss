@@ -1,0 +1,43 @@
+@import './superbowl.scss';
+
+#banner{
+ width: 728px;
+ height: 90px;
+ 
+}
+
+
+
+#olg{
+	
+	width: 117px;
+	height: 69px;
+	@include pos(-2, 26);
+	
+}
+
+
+
+#legalBtn{	
+	@include pos(650, 0);	
+	width: 80px;
+
+}
+
+
+.phone{
+	
+	@include pos-scale(-14, 285, 1.16);
+	.end_screen_3_group{
+		@include pos-scale(37, -61, .38);
+	}
+}
+
+
+
+
+#legalBtn{	
+	@include pos(95, 4);	
+	width: 72px;
+	// opacity: 1;
+}
