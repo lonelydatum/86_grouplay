@@ -9,8 +9,19 @@ gsap.defaults({
 const {w, h} = size
 
 const READ = {
-	t1: 2,
-	t2: 2.5,	
+	boardgames:{
+		t1: 1.8,
+		t2: 2.5,		
+	},
+	pickleball:{
+		t1: 1.8,
+		t2: 2.5,		
+	},
+	ski:{
+		t1: 1.2,
+		t2: 2.5,		
+	},
+	
 }
 
 let SCREEN_WIDTH = 74
@@ -49,11 +60,11 @@ function start(){
 	tl.from('.t1', stag(vh), "start");	
 	
 	
-	tl.to(".t1", {opacity:0, duration:.3}, `+=${READ.t1}`)
+	tl.to(".t1", {opacity:0, duration:.3}, `+=${READ[universalBanner.name].t1}`)
 	tl.from('.t2', stag(vh));		
 	tl.from('.frame1 .logo_group', {scale:0, duration:.35, ease:"back.out"}, "+=.2");		
 
-	tl.add("f2", `+=${READ.t2}`)
+	tl.add("f2", `+=${READ[universalBanner.name].t2}`)
 	tl.set(".frame1", {opacity:0}, "f2")
 
 

@@ -1,0 +1,29 @@
+@import '../../../_common/styles/common.scss';
+@import '../../../_common/styles/size_970x250.scss';
+
+
+.frame1 .logo_group{
+	@include pos-scale(487, 56, 1);
+	// translate(375px, -24px) scale(0.49)
+}
+
+
+.t2a{
+	// z-index: 1;
+	// @include pos-scale(0, -2, .5);
+}
+// .t2b{
+// 	z-index: 0;
+// }
+
+// .t2c{
+// 	// z-index: 8;
+// 	@include pos-scale(0, 2, .5);
+// }
+
+
+// .t2d{
+// 	// z-index: 8;
+// 	@include pos-scale(0, 2, .5);
+// }
+
