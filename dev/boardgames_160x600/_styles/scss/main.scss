@@ -1,0 +1,52 @@
+@import '../../../_common/styles/common.scss';
+
+
+#banner{
+ width: 160px;
+ height: 600px;
+ background-color: #00c849;
+}
+
+#olg{
+	width: 87px;
+	height: 49px;
+	@include pos(0, 555);
+	// opacity: .5 !important;
+	
+}
+
+.t2{
+	// @include pos-scale(0, 66, .5);
+}
+
+
+#legalBtn{	
+	@include pos(95, 4);	
+	width: 72px;
+	// opacity: 1;
+}
+
+
+#bars{
+	@include pos(0, 385);
+	
+	
+
+	.bar_7{
+		height: 75px !important;
+		
+	}
+}
+
+
+#bars2{
+	@include pos(0, 113);
+	
+	.bar_0{
+		height: 132px !important;
+		top: -112px;
+	}
+	
+}
+
+
