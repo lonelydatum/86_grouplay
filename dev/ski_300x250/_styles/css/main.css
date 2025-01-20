@@ -443,6 +443,33 @@ canvas, .text, .frame, .outline, img {
   height: 250px;
 }
 
+.t2a {
+  z-index: 1;
+  -webkit-transform: translate(0px, -2px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, -2px) scale(0.5, 0.5);
+  transform: translate(0px, -2px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.t2b {
+  z-index: 0;
+}
+
+.t2c {
+  -webkit-transform: translate(0px, 2px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 2px) scale(0.5, 0.5);
+  transform: translate(0px, 2px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 #legalBtn {
   -webkit-transform: translate(220px, 0px);
   -ms-transform: translate(220px, 0px);
@@ -470,14 +497,15 @@ canvas, .text, .frame, .outline, img {
 }
 
 .frame1 .logo_group {
-  -webkit-transform: translate(162px, -10px) scale(0.6, 0.6);
-  -ms-transform: translate(162px, -10px) scale(0.6, 0.6);
-  transform: translate(162px, -10px) scale(0.6, 0.6);
+  -webkit-transform: translate(173px, -20px) scale(0.5, 0.5);
+  -ms-transform: translate(173px, -20px) scale(0.5, 0.5);
+  transform: translate(173px, -20px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
+  z-index: 3;
 }
 
 .phone {
