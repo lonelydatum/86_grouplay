@@ -27,17 +27,18 @@
 
 .phone{
 	
-	@include pos-scale(-14, 285, 1.16);
+	@include pos-scale(510, 5, .53);
 	.end_screen_3_group{
-		@include pos-scale(37, -61, .38);
+		@include pos-scale(157, 12, .75);
+		
 	}
 }
 
 
 
 
-#legalBtn{	
-	@include pos(95, 4);	
-	width: 72px;
-	// opacity: 1;
+
+
+.end_text{
+	@include pos-scale(0, 20, .5);
 }

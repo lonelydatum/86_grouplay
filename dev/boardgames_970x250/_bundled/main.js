@@ -44,8 +44,9 @@ function start_landscape(barOptions, barOptions2) {
 	var vh = arguments.length <= 2 || arguments[2] === undefined ? { x: -size.w } : arguments[2];
 }
 
-function start(barOptions, barOptions2) {
-	var vh = arguments.length <= 2 || arguments[2] === undefined ? { x: -size.w } : arguments[2];
+function start() {
+
+	var vh = size.w > size.h ? { y: size.h } : { x: -size.w };
 
 	var tl = init();
 
@@ -63,7 +64,9 @@ function start(barOptions, barOptions2) {
 	tl.set(".frame2", { opacity: 1 }, "f2");
 	tl.from('.end_text', { opacity: 0, duration: .3 }, "+=.3");
 	tl.add(phone());
-	tl.from(['.end_legal', '.end_cta'], { opacity: 0 }, "+=.5");
+	tl.add("ender", "+=.5");
+	tl.to(".end_text", { x: 0, y: 0, duration: .3 }, "ender");
+	tl.from(['.end_legal', '.end_cta'], { opacity: 0 });
 
 	tl.add((0, _proline.olg)());
 	// tl.play("f2")
@@ -118,34 +121,11 @@ function olg() {
 exports.olg = olg;
 
 },{}],3:[function(require,module,exports){
-"use strict";
+'use strict';
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-var colors = ["d3ef35", "c4ec37", "b3ea38", "a2e739", "92e33a", "82e03c", "71de3d", "61da40", "52d641", "41d343", "30d144", "20ce46", "10ca46"];
-
-var barOptions = {
-	colors: ["00c748", "17cc46", "2ed145", "46d442", "5eda40", "76de3d", "8de23b", "a4e739", "bbeb37", "d3ef35"],
-	verHor: "h",
-	TOTAL: 10,
-	WIDTH: 109,
-	HEIGHT: 11,
-	GAP: -98,
-	id: "bars"
-
-};
-
-var barOptions2 = {
-	colors: colors,
-	verHor: "v",
-	TOTAL: 11,
-	HEIGHT: 500,
-	GAP: 46,
-	WIDTH: 67,
-	id: "bars2"
-};
-
-(0, _commonJsCommonJs.start)(barOptions, barOptions2, { y: 50 });
+(0, _commonJsCommonJs.start)();
 
 module.exports = {};
 

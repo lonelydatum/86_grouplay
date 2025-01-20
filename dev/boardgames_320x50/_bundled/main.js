@@ -44,8 +44,9 @@ function start_landscape(barOptions, barOptions2) {
 	var vh = arguments.length <= 2 || arguments[2] === undefined ? { x: -size.w } : arguments[2];
 }
 
-function start(barOptions, barOptions2) {
-	var vh = arguments.length <= 2 || arguments[2] === undefined ? { x: -size.w } : arguments[2];
+function start() {
+
+	var vh = size.w > size.h ? { y: size.h } : { x: -size.w };
 
 	var tl = init();
 
@@ -63,7 +64,9 @@ function start(barOptions, barOptions2) {
 	tl.set(".frame2", { opacity: 1 }, "f2");
 	tl.from('.end_text', { opacity: 0, duration: .3 }, "+=.3");
 	tl.add(phone());
-	tl.from(['.end_legal', '.end_cta'], { opacity: 0 }, "+=.5");
+	tl.add("ender", "+=.5");
+	tl.to(".end_text", { x: 0, y: 0, duration: .3 }, "ender");
+	tl.from(['.end_legal', '.end_cta'], { opacity: 0 });
 
 	tl.add((0, _proline.olg)());
 	// tl.play("f2")

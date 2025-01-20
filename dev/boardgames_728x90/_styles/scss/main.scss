@@ -1,2 +1,7 @@
 @import '../../../_common/styles/common.scss';
 @import '../../../_common/styles/size_728x90.scss';
+
+.frame1 .logo_group{
+	@include pos-scale(375, -24, .49);
+	// translate(375px, -24px) scale(0.49)
+}

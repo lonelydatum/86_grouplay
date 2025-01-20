@@ -469,9 +469,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone {
-  -webkit-transform: translate(-14px, 285px) scale(1.16, 1.16);
-  -ms-transform: translate(-14px, 285px) scale(1.16, 1.16);
-  transform: translate(-14px, 285px) scale(1.16, 1.16);
+  -webkit-transform: translate(510px, 5px) scale(0.53, 0.53);
+  -ms-transform: translate(510px, 5px) scale(0.53, 0.53);
+  transform: translate(510px, 5px) scale(0.53, 0.53);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -480,9 +480,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone .end_screen_3_group {
-  -webkit-transform: translate(37px, -61px) scale(0.38, 0.38);
-  -ms-transform: translate(37px, -61px) scale(0.38, 0.38);
-  transform: translate(37px, -61px) scale(0.38, 0.38);
+  -webkit-transform: translate(157px, 12px) scale(0.75, 0.75);
+  -ms-transform: translate(157px, 12px) scale(0.75, 0.75);
+  transform: translate(157px, 12px) scale(0.75, 0.75);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -490,16 +490,26 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
-#legalBtn {
-  -webkit-transform: translate(95px, 4px);
-  -ms-transform: translate(95px, 4px);
-  transform: translate(95px, 4px);
+.end_text {
+  -webkit-transform: translate(0px, 20px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 20px) scale(0.5, 0.5);
+  transform: translate(0px, 20px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-  width: 72px;
+}
+
+.frame1 .logo_group {
+  -webkit-transform: translate(375px, -24px) scale(0.49, 0.49);
+  -ms-transform: translate(375px, -24px) scale(0.49, 0.49);
+  transform: translate(375px, -24px) scale(0.49, 0.49);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=main.css.map */

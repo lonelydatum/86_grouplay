@@ -44,8 +44,9 @@ function start_landscape(barOptions, barOptions2) {
 	var vh = arguments.length <= 2 || arguments[2] === undefined ? { x: -size.w } : arguments[2];
 }
 
-function start(barOptions, barOptions2) {
-	var vh = arguments.length <= 2 || arguments[2] === undefined ? { x: -size.w } : arguments[2];
+function start() {
+
+	var vh = size.w > size.h ? { y: size.h } : { x: -size.w };
 
 	var tl = init();
 
@@ -63,7 +64,9 @@ function start(barOptions, barOptions2) {
 	tl.set(".frame2", { opacity: 1 }, "f2");
 	tl.from('.end_text', { opacity: 0, duration: .3 }, "+=.3");
 	tl.add(phone());
-	tl.from(['.end_legal', '.end_cta'], { opacity: 0 }, "+=.5");
+	tl.add("ender", "+=.5");
+	tl.to(".end_text", { x: 0, y: 0, duration: .3 }, "ender");
+	tl.from(['.end_legal', '.end_cta'], { opacity: 0 });
 
 	tl.add((0, _proline.olg)());
 	// tl.play("f2")
@@ -118,33 +121,11 @@ function olg() {
 exports.olg = olg;
 
 },{}],3:[function(require,module,exports){
-"use strict";
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+'use strict';
 
 var _commonJsCommonJs = require('../../_common/js/common.js');
 
-var colors = ["2ed145", "46d442", "5eda40", "76de3d", "8de23b", "a4e739", "bbeb37", "d3ef35"];
-
-var barOptions = {
-	colors: colors,
-	verHor: "h",
-	TOTAL: 8,
-	WIDTH: 50,
-	HEIGHT: 20,
-	GAP: -50,
-	id: "bars"
-
-};
-
-var barOptions2 = _extends({}, barOptions, {
-	colors: colors.reverse(),
-	GAP: 50,
-	WIDTH: 370,
-	id: "bars2"
-});
-
-(0, _commonJsCommonJs.start)(barOptions, barOptions2);
+(0, _commonJsCommonJs.start)();
 
 module.exports = {};
 

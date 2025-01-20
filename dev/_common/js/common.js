@@ -37,7 +37,9 @@ function start_landscape(barOptions, barOptions2, vh={x:-size.w}){
 
 }
 
-function start(barOptions, barOptions2, vh={x:-size.w}){
+function start(){
+
+	const vh = size.w>size.h?{y:size.h}:{x:-size.w};
 	
 	const tl = init()	
 	
@@ -58,7 +60,9 @@ function start(barOptions, barOptions2, vh={x:-size.w}){
 	tl.set(".frame2", {opacity:1}, "f2")
 	tl.from('.end_text', {opacity:0, duration:.3}, "+=.3");		
 	tl.add(phone())
-	tl.from( [ '.end_legal', '.end_cta'], {opacity:0}, "+=.5");		
+	tl.add("ender", "+=.5")
+	tl.to(".end_text", {x:0, y:0, duration:.3}, "ender")
+	tl.from( [ '.end_legal', '.end_cta'], {opacity:0});		
 	
 	
 	tl.add(olg())
