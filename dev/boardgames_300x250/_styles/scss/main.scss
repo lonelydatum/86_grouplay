@@ -7,7 +7,18 @@
  
 }
 
+.t2a{
+	z-index: 1;
+	@include pos-scale(0, -2, .5);
+}
+.t2b{
+	z-index: 0;
+}
 
+.t2c{
+	// z-index: 8;
+	@include pos-scale(0, 2, .5);
+}
 
 
 #legalBtn{	
@@ -31,36 +42,5 @@
 
 .phone{
 	@include pos(158, 45);
-	.end_hand{
-		// opacity: 0;
-	}
-	.screen{
-		width:74px;
-		height: 129px;
-		@include pos(25, 13);
-		overflow: hidden;
-		.items{
-			.end_screen_1{
-				@include pos-scale(0, 0, .5);
-			}
-			.end_screen_2{
-				@include pos-scale(74, 0, .5);
-			}
-			.end_screen_3{
-				@include pos-scale(148, 0, .5);
-			}	
-		}
-		
-	}
-	.end_screen_1_max{
-		@include pos-scale(-43, 13, .5);
-	}
-
-	.end_screen_2_649{
-		@include pos-scale(-41, 17, .5);
-	}
-
-	.end_screen_3_group{
-		@include pos-scale(14, -61, .45);
-	}
+	
 }

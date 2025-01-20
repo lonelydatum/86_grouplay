@@ -37,7 +37,7 @@ function init() {
 }
 
 function stag(vh) {
-	return _extends({ duration: .3, opacity: 0, stagger: .2 }, vh);
+	return _extends({ duration: .3, opacity: 0, stagger: .15 }, vh);
 }
 
 function start_landscape(barOptions, barOptions2) {
@@ -55,13 +55,13 @@ function start(barOptions, barOptions2) {
 
 	tl.to(".t1", { opacity: 0, duration: .3 }, "+=" + READ.t1);
 	tl.from('.t2', stag(vh));
-	tl.from('.frame1 .logo_group', { scale: 0, duration: .5, ease: "back.out" }, "+=.5");
+	tl.from('.frame1 .logo_group', { scale: 0, duration: .35, ease: "back.out" }, "+=.2");
 
 	tl.add("f2", "+=" + READ.t2);
 	tl.set(".frame1", { opacity: 0 }, "f2");
 
 	tl.set(".frame2", { opacity: 1 }, "f2");
-	tl.from('.end_text', { opacity: 0, duration: .3 });
+	tl.from('.end_text', { opacity: 0, duration: .3 }, "+=.3");
 	tl.add(phone());
 	tl.from('.end_cta', { opacity: 0 }, "+=.5");
 
