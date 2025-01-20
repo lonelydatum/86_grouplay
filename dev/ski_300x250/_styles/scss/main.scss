@@ -1,11 +1,6 @@
 @import '../../../_common/styles/common.scss';
-@import '../../../_common/styles/superbowl.scss';
+@import '../../../_common/styles/size_300x250.scss';
 
-#banner{
- width: 300px;
- height: 250px;
- 
-}
 
 
 .t2a{
@@ -21,28 +16,3 @@
 	@include pos-scale(0, 2, .5);
 }
 
-
-#legalBtn{	
-	@include pos(220, 0);	
-	width: 80px;
-	opacity: 0;
-
-}
-
-
-#olg{
-	width: 108px;
-	height: 69px;
-	@include pos(0, 193);
-}
-
-
-.frame1 .logo_group{
-	@include pos-scale(173, -20, .5);
-	z-index: 3;
-}
-
-.phone{
-	@include pos(158, 45);
-	
-}

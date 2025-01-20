@@ -58,9 +58,9 @@ table {
 }
 
 .transform-origin {
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50% !important;
+  -ms-transform-origin: 50% 50% !important;
+  transform-origin: 50% 50% !important;
 }
 
 .end_cta {
@@ -81,9 +81,9 @@ table {
 .phone .screen {
   width: 74px;
   height: 129px;
-  -webkit-transform: translate(25px, 13px);
-  -ms-transform: translate(25px, 13px);
-  transform: translate(25px, 13px);
+  -webkit-transform: translate(51px, 13px);
+  -ms-transform: translate(51px, 13px);
+  transform: translate(51px, 13px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -126,9 +126,9 @@ table {
 }
 
 .phone .end_screen_1_max {
-  -webkit-transform: translate(-43px, 13px) scale(0.5, 0.5);
-  -ms-transform: translate(-43px, 13px) scale(0.5, 0.5);
-  transform: translate(-43px, 13px) scale(0.5, 0.5);
+  -webkit-transform: translate(-17px, 13px) scale(0.5, 0.5);
+  -ms-transform: translate(-17px, 13px) scale(0.5, 0.5);
+  transform: translate(-17px, 13px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -137,9 +137,9 @@ table {
 }
 
 .phone .end_screen_2_649 {
-  -webkit-transform: translate(-41px, 17px) scale(0.5, 0.5);
-  -ms-transform: translate(-41px, 17px) scale(0.5, 0.5);
-  transform: translate(-41px, 17px) scale(0.5, 0.5);
+  -webkit-transform: translate(-15px, 17px) scale(0.5, 0.5);
+  -ms-transform: translate(-15px, 17px) scale(0.5, 0.5);
+  transform: translate(-15px, 17px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -148,9 +148,9 @@ table {
 }
 
 .phone .end_screen_3_group {
-  -webkit-transform: translate(14px, -61px) scale(0.45, 0.45);
-  -ms-transform: translate(14px, -61px) scale(0.45, 0.45);
-  transform: translate(14px, -61px) scale(0.45, 0.45);
+  -webkit-transform: translate(40px, -61px) scale(0.45, 0.45);
+  -ms-transform: translate(40px, -61px) scale(0.45, 0.45);
+  transform: translate(40px, -61px) scale(0.45, 0.45);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -331,6 +331,113 @@ canvas, .text, .frame, .outline, img {
   z-index: 10;
 }
 
+.logo_group {
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.transform-origin {
+  -webkit-transform-origin: 50% 50% !important;
+  -ms-transform-origin: 50% 50% !important;
+  transform-origin: 50% 50% !important;
+}
+
+.end_cta {
+  -webkit-filter: drop-shadow(0px 0px 10px #20bee6);
+  filter: drop-shadow(0px 0px 10px #20bee6);
+}
+
+.end_screen_1_max {
+  -webkit-filter: drop-shadow(0px 0px 10px #d9efa5);
+  filter: drop-shadow(0px 0px 10px #d9efa5);
+}
+
+.end_screen_2_649 {
+  -webkit-filter: drop-shadow(0px 0px 10px #9de6f0);
+  filter: drop-shadow(0px 0px 10px #9de6f0);
+}
+
+.phone .screen {
+  width: 74px;
+  height: 129px;
+  -webkit-transform: translate(51px, 13px);
+  -ms-transform: translate(51px, 13px);
+  transform: translate(51px, 13px);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.phone .screen .items .end_screen_1 {
+  -webkit-transform: translate(0px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 0px) scale(0.5, 0.5);
+  transform: translate(0px, 0px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.phone .screen .items .end_screen_2 {
+  -webkit-transform: translate(74px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(74px, 0px) scale(0.5, 0.5);
+  transform: translate(74px, 0px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.phone .screen .items .end_screen_3 {
+  -webkit-transform: translate(148px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(148px, 0px) scale(0.5, 0.5);
+  transform: translate(148px, 0px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.phone .end_screen_1_max {
+  -webkit-transform: translate(-17px, 13px) scale(0.5, 0.5);
+  -ms-transform: translate(-17px, 13px) scale(0.5, 0.5);
+  transform: translate(-17px, 13px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.phone .end_screen_2_649 {
+  -webkit-transform: translate(-15px, 17px) scale(0.5, 0.5);
+  -ms-transform: translate(-15px, 17px) scale(0.5, 0.5);
+  transform: translate(-15px, 17px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.phone .end_screen_3_group {
+  -webkit-transform: translate(40px, -61px) scale(0.45, 0.45);
+  -ms-transform: translate(40px, -61px) scale(0.45, 0.45);
+  transform: translate(40px, -61px) scale(0.45, 0.45);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 #banner {
   width: 160px;
   height: 600px;
@@ -350,6 +457,28 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
+.phone {
+  -webkit-transform: translate(-14px, 285px) scale(1.16, 1.16);
+  -ms-transform: translate(-14px, 285px) scale(1.16, 1.16);
+  transform: translate(-14px, 285px) scale(1.16, 1.16);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.phone .end_screen_3_group {
+  -webkit-transform: translate(37px, -61px) scale(0.38, 0.38);
+  -ms-transform: translate(37px, -61px) scale(0.38, 0.38);
+  transform: translate(37px, -61px) scale(0.38, 0.38);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
 #legalBtn {
   -webkit-transform: translate(95px, 4px);
   -ms-transform: translate(95px, 4px);
@@ -362,35 +491,15 @@ canvas, .text, .frame, .outline, img {
   width: 72px;
 }
 
-#bars {
-  -webkit-transform: translate(0px, 385px);
-  -ms-transform: translate(0px, 385px);
-  transform: translate(0px, 385px);
+.frame1 .logo_group {
+  -webkit-transform: translate(7px, 90px) scale(0.73, 0.73);
+  -ms-transform: translate(7px, 90px) scale(0.73, 0.73);
+  transform: translate(7px, 90px) scale(0.73, 0.73);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
   perspective: 1000px;
   position: absolute;
-}
-
-#bars .bar_7 {
-  height: 75px !important;
-}
-
-#bars2 {
-  -webkit-transform: translate(0px, 113px);
-  -ms-transform: translate(0px, 113px);
-  transform: translate(0px, 113px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-#bars2 .bar_0 {
-  height: 132px !important;
-  top: -112px;
 }
 
 /*# sourceMappingURL=main.css.map */

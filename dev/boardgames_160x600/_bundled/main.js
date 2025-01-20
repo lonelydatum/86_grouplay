@@ -63,7 +63,7 @@ function start(barOptions, barOptions2) {
 	tl.set(".frame2", { opacity: 1 }, "f2");
 	tl.from('.end_text', { opacity: 0, duration: .3 }, "+=.3");
 	tl.add(phone());
-	tl.from('.end_cta', { opacity: 0 }, "+=.5");
+	tl.from(['.end_legal', '.end_cta'], { opacity: 0 }, "+=.5");
 
 	tl.add((0, _proline.olg)());
 	// tl.play("f2")

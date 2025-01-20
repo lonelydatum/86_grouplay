@@ -58,9 +58,9 @@ table {
 }
 
 .transform-origin {
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50% !important;
+  -ms-transform-origin: 50% 50% !important;
+  transform-origin: 50% 50% !important;
 }
 
 .end_cta {
@@ -81,9 +81,9 @@ table {
 .phone .screen {
   width: 74px;
   height: 129px;
-  -webkit-transform: translate(25px, 13px);
-  -ms-transform: translate(25px, 13px);
-  transform: translate(25px, 13px);
+  -webkit-transform: translate(51px, 13px);
+  -ms-transform: translate(51px, 13px);
+  transform: translate(51px, 13px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -126,9 +126,9 @@ table {
 }
 
 .phone .end_screen_1_max {
-  -webkit-transform: translate(-43px, 13px) scale(0.5, 0.5);
-  -ms-transform: translate(-43px, 13px) scale(0.5, 0.5);
-  transform: translate(-43px, 13px) scale(0.5, 0.5);
+  -webkit-transform: translate(-17px, 13px) scale(0.5, 0.5);
+  -ms-transform: translate(-17px, 13px) scale(0.5, 0.5);
+  transform: translate(-17px, 13px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -137,9 +137,9 @@ table {
 }
 
 .phone .end_screen_2_649 {
-  -webkit-transform: translate(-41px, 17px) scale(0.5, 0.5);
-  -ms-transform: translate(-41px, 17px) scale(0.5, 0.5);
-  transform: translate(-41px, 17px) scale(0.5, 0.5);
+  -webkit-transform: translate(-15px, 17px) scale(0.5, 0.5);
+  -ms-transform: translate(-15px, 17px) scale(0.5, 0.5);
+  transform: translate(-15px, 17px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -148,9 +148,9 @@ table {
 }
 
 .phone .end_screen_3_group {
-  -webkit-transform: translate(14px, -61px) scale(0.45, 0.45);
-  -ms-transform: translate(14px, -61px) scale(0.45, 0.45);
-  transform: translate(14px, -61px) scale(0.45, 0.45);
+  -webkit-transform: translate(40px, -61px) scale(0.45, 0.45);
+  -ms-transform: translate(40px, -61px) scale(0.45, 0.45);
+  transform: translate(40px, -61px) scale(0.45, 0.45);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -329,80 +329,6 @@ canvas, .text, .frame, .outline, img {
 
 #GL_logo, #GL_playForOntario {
   z-index: 10;
-}
-
-#banner {
-  width: 320px;
-  height: 50px;
-}
-
-#olg {
-  width: 51px;
-  height: 47px;
-  -webkit-transform: translate(0px, 15px);
-  -ms-transform: translate(0px, 15px);
-  transform: translate(0px, 15px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-#legalBtn {
-  -webkit-transform: translate(280px, 0px);
-  -ms-transform: translate(280px, 0px);
-  transform: translate(280px, 0px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-  width: 80px;
-  display: none;
-}
-
-#legalContent {
-  line-height: 14px;
-  font-size: 12px;
-  padding: 2px;
-}
-
-#bars {
-  -webkit-transform: translate(52px, 0px);
-  -ms-transform: translate(52px, 0px);
-  transform: translate(52px, 0px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-#bars .bar_0 {
-  width: 71px !important;
-  left: -51px;
-}
-
-#bars2 {
-  -webkit-transform: translate(52px, 0px);
-  -ms-transform: translate(52px, 0px);
-  transform: translate(52px, 0px);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
-#bars2 .bar_0 {
-  width: 71px !important;
-  left: -51px;
-}
-
-.t1 {
-  -webkit-filter: none;
-  filter: none;
 }
 
 /*# sourceMappingURL=main.css.map */
