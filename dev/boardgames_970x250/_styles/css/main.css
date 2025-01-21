@@ -513,4 +513,8 @@ canvas, .text, .frame, .outline, img {
   position: absolute;
 }
 
+.t2a {
+  z-index: 1;
+}
+
 /*# sourceMappingURL=main.css.map */
