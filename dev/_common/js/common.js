@@ -24,7 +24,7 @@ const READ = {
 	
 }
 
-let SCREEN_WIDTH = 74
+
 
 function init(){	
 	const tl = new TimelineMax({onComplete:()=>{
@@ -33,6 +33,8 @@ function init(){
 		}
 	}})
 	tl.set(".frame1", {opacity:1})
+	tl.set("#olg", {opacity:1})
+	// tl.set("#olg #bluewedge1", {scale:1})
 	return tl
 }
 
@@ -53,6 +55,7 @@ function start(){
 	const vh = size.w/size.h>1.5?{y:size.h}:{x:-size.w};
 	
 	const tl = init()	
+	// return
 	
 	tl.add("start")
 	
@@ -69,6 +72,15 @@ function start(){
 
 
 	tl.set(".frame2", {opacity:1}, "f2")
+
+	// tl.set("#olg", {opacity:0})
+	// tl.set(["#bluewedge2", "#redwedge2"], {visibility:"hidden"})
+	// tl.set(["#bluewedge1", "#redwedge1"], {transformOrigin:"0% 100%", x:0, y:0, scaleX:1, scaleY:0})
+ 
+    
+
+
+
 	tl.from('.end_text', {opacity:0, duration:.3}, "+=.3");		
 	tl.add(phone())
 	tl.add("ender", "+=.5")
@@ -85,18 +97,19 @@ function phone(){
 
 	tl.from('.phone', {y:`+=${size.h}`});
 
-	
+	const TIME = .3
+	let SCREEN_WIDTH = 73
 	tl.from(".end_screen_1_max", {duration:.3, scale:0})
 
 
 	tl.add("screen2", "+=.5")
 	tl.to(".end_screen_1_max", {duration:.3, opacity:0}, "screen2")
-	tl.to(".screen .items", {duration:.3, x:-SCREEN_WIDTH}, "screen2")
+	tl.to(".screen .items", {duration:TIME, x:-SCREEN_WIDTH}, "screen2")
 	tl.from(".end_screen_2_649", {duration:.3, scale:0})
 
 	tl.add("screen3", "+=.5")
 	tl.to(".end_screen_2_649", {duration:.3, opacity:0}, "screen3")
-	tl.to(".screen .items", {duration:.3, x:-SCREEN_WIDTH*2}, "screen3")
+	tl.to(".screen .items", {duration:TIME, x:-SCREEN_WIDTH*2}, "screen3")
 	tl.from(".end_screen_3_group", {duration:.3, scale:0})
 
 	return tl

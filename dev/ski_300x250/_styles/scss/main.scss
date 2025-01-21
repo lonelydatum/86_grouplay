@@ -16,3 +16,8 @@
 	@include pos-scale(0, 2, .5);
 }
 
+
+.frame1 .logo_group{
+	@include pos-scale(170, -21, .5);
+	z-index: 10;
+}

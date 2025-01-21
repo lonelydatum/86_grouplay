@@ -81,9 +81,9 @@ table {
 .phone .screen {
   width: 74px;
   height: 129px;
-  -webkit-transform: translate(51px, 13px);
-  -ms-transform: translate(51px, 13px);
-  transform: translate(51px, 13px);
+  -webkit-transform: translate(52px, 13px);
+  -ms-transform: translate(52px, 13px);
+  transform: translate(52px, 13px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -104,9 +104,9 @@ table {
 }
 
 .phone .screen .items .end_screen_2 {
-  -webkit-transform: translate(74px, 0px) scale(0.5, 0.5);
-  -ms-transform: translate(74px, 0px) scale(0.5, 0.5);
-  transform: translate(74px, 0px) scale(0.5, 0.5);
+  -webkit-transform: translate(73px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(73px, 0px) scale(0.5, 0.5);
+  transform: translate(73px, 0px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -115,9 +115,9 @@ table {
 }
 
 .phone .screen .items .end_screen_3 {
-  -webkit-transform: translate(148px, 0px) scale(0.5, 0.5);
-  -ms-transform: translate(148px, 0px) scale(0.5, 0.5);
-  transform: translate(148px, 0px) scale(0.5, 0.5);
+  -webkit-transform: translate(146px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(146px, 0px) scale(0.5, 0.5);
+  transform: translate(146px, 0px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -361,9 +361,9 @@ canvas, .text, .frame, .outline, img {
 .phone .screen {
   width: 74px;
   height: 129px;
-  -webkit-transform: translate(51px, 13px);
-  -ms-transform: translate(51px, 13px);
-  transform: translate(51px, 13px);
+  -webkit-transform: translate(52px, 13px);
+  -ms-transform: translate(52px, 13px);
+  transform: translate(52px, 13px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -384,9 +384,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone .screen .items .end_screen_2 {
-  -webkit-transform: translate(74px, 0px) scale(0.5, 0.5);
-  -ms-transform: translate(74px, 0px) scale(0.5, 0.5);
-  transform: translate(74px, 0px) scale(0.5, 0.5);
+  -webkit-transform: translate(73px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(73px, 0px) scale(0.5, 0.5);
+  transform: translate(73px, 0px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -395,9 +395,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .phone .screen .items .end_screen_3 {
-  -webkit-transform: translate(148px, 0px) scale(0.5, 0.5);
-  -ms-transform: translate(148px, 0px) scale(0.5, 0.5);
-  transform: translate(148px, 0px) scale(0.5, 0.5);
+  -webkit-transform: translate(146px, 0px) scale(0.5, 0.5);
+  -ms-transform: translate(146px, 0px) scale(0.5, 0.5);
+  transform: translate(146px, 0px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -441,7 +441,6 @@ canvas, .text, .frame, .outline, img {
 #banner {
   width: 300px;
   height: 600px;
-  background-color: #00c849;
 }
 
 #olg {
