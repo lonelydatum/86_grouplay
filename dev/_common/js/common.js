@@ -50,7 +50,7 @@ function start_landscape(barOptions, barOptions2, vh={x:-size.w}){
 
 function start(){
 
-	const vh = size.w>size.h?{y:size.h}:{x:-size.w};
+	const vh = size.w/size.h>1.5?{y:size.h}:{x:-size.w};
 	
 	const tl = init()	
 	

@@ -57,7 +57,7 @@ function start_landscape(barOptions, barOptions2) {
 
 function start() {
 
-	var vh = size.w > size.h ? { y: size.h } : { x: -size.w };
+	var vh = size.w / size.h > 1.5 ? { y: size.h } : { x: -size.w };
 
 	var tl = init();
 
