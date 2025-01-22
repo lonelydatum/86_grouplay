@@ -446,9 +446,9 @@ canvas, .text, .frame, .outline, img {
 #olg {
   width: 117px;
   height: 69px;
-  -webkit-transform: translate(-2px, 26px);
-  -ms-transform: translate(-2px, 26px);
-  transform: translate(-2px, 26px);
+  -webkit-transform: translate(-2px, 30px);
+  -ms-transform: translate(-2px, 30px);
+  transform: translate(-2px, 30px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -494,6 +494,17 @@ canvas, .text, .frame, .outline, img {
   -webkit-transform: translate(0px, 20px) scale(0.5, 0.5);
   -ms-transform: translate(0px, 20px) scale(0.5, 0.5);
   transform: translate(0px, 20px) scale(0.5, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  position: absolute;
+}
+
+.end_smart {
+  -webkit-transform: translate(0px, -3px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, -3px) scale(0.5, 0.5);
+  transform: translate(0px, -3px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

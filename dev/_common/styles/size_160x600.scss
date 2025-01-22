@@ -29,3 +29,8 @@
 	width: 72px;
 	// opacity: 1;
 }
+
+
+.end_smart{
+	@include pos-scale(0, 3, .5);
+}

@@ -34,3 +34,8 @@
 .end_text{
 	@include pos-scale(0, 20, .5);
 }
+
+
+.end_smart{
+	@include pos-scale(0, -2, .5);
+}
