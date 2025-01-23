@@ -446,9 +446,9 @@ canvas, .text, .frame, .outline, img {
 #olg {
   width: 158px;
   height: 81px;
-  -webkit-transform: translate(-2px, 169px);
-  -ms-transform: translate(-2px, 169px);
-  transform: translate(-2px, 169px);
+  -webkit-transform: translate(-2px, 172px);
+  -ms-transform: translate(-2px, 172px);
+  transform: translate(-2px, 172px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
@@ -503,9 +503,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .end_smart {
-  -webkit-transform: translate(0px, -2px) scale(0.5, 0.5);
-  -ms-transform: translate(0px, -2px) scale(0.5, 0.5);
-  transform: translate(0px, -2px) scale(0.5, 0.5);
+  -webkit-transform: translate(0px, 2px) scale(0.5, 0.5);
+  -ms-transform: translate(0px, 2px) scale(0.5, 0.5);
+  transform: translate(0px, 2px) scale(0.5, 0.5);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;

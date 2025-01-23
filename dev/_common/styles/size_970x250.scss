@@ -10,7 +10,7 @@
 	// border: 1px solid red;
 	width: 158px;
 	height: 81px;
-	@include pos(-2, 169);
+	@include pos(-2, 172);
 	// opacity: .5 !important;
 }
 
@@ -37,5 +37,5 @@
 
 
 .end_smart{
-	@include pos-scale(0, -2, .5);
+	@include pos-scale(0, 2, .5);
 }

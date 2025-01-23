@@ -490,17 +490,6 @@ canvas, .text, .frame, .outline, img {
   width: 72px;
 }
 
-.end_smart {
-  -webkit-transform: translate(0px, 3px) scale(0.5, 0.5);
-  -ms-transform: translate(0px, 3px) scale(0.5, 0.5);
-  transform: translate(0px, 3px) scale(0.5, 0.5);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  position: absolute;
-}
-
 .frame1 .logo_group {
   -webkit-transform: translate(7px, 114px) scale(0.73, 0.73);
   -ms-transform: translate(7px, 114px) scale(0.73, 0.73);
