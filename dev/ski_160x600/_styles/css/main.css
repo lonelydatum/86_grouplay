@@ -502,9 +502,9 @@ canvas, .text, .frame, .outline, img {
 }
 
 .frame1 .logo_group {
-  -webkit-transform: translate(7px, 90px) scale(0.73, 0.73);
-  -ms-transform: translate(7px, 90px) scale(0.73, 0.73);
-  transform: translate(7px, 90px) scale(0.73, 0.73);
+  -webkit-transform: translate(7px, 110px) scale(0.73, 0.73);
+  -ms-transform: translate(7px, 110px) scale(0.73, 0.73);
+  transform: translate(7px, 110px) scale(0.73, 0.73);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
