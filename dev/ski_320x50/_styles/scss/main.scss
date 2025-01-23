@@ -8,3 +8,14 @@
 .frame1 .logo_group{
 	@include pos-scale(94, -42, .25);
 }
+
+
+
+
+.frame1 .t2b{
+	@include pos-scale(0, 2, .5);
+}
+
+.frame1 .t2c, {
+	@include pos-scale(0, 3, .5);
+}
